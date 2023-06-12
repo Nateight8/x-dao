@@ -1,5 +1,4 @@
 import Header from "../../components/header/Header";
-import { ScrollArea } from "../../components/ui/scroll-area";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
@@ -22,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={body.className}>
         <Header />
-        <ScrollArea className="h-screen w-full">{children}</ScrollArea>
+        {children}
       </body>
     </html>
   );
